@@ -1,0 +1,21 @@
+server:
+  port: 81
+security:
+  basic:
+    enabled: false
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:activiti;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+  h2:
+    console:
+      enabled: true
+  mvc:
+    formcontent:
+      putfilter:
+        enabled: true
